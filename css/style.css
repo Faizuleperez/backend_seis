@@ -2,40 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-*{
+* {
     border: 0;
     margin: 0;
     padding: 0;
 }
+
 /* Se agrega  background-color al body*/
-body{
+body {
     background-color: rgb(219, 241, 204);
 }
-header{
+
+header {
     width: 100%;
     height: 500px;
 }
-header .illus{
+
+header .illus {
     position: absolute;
     top: 0;
     right: 0;
     height: 75%;
-   
+
     filter: drop-shadow(0 2px 35px #4343437b);
 }
 
-.header-contain{
+.header-contain {
     width: 80%;
     height: 500px;
     margin: 0px 10% 0px 10%;
 }
+
 /*Diseño de titulo*/
-.header-contain .title{
+.header-contain .title {
     width: 40%;
     height: 100%;
     margin-top: 300px;
 }
-h2{
+
+h2 {
     text-transform: uppercase;
     font-family: 'Kanit', sans-serif;
     font-weight: 800;
@@ -43,7 +48,8 @@ h2{
     font-size: 18px;
     color: rgb(100, 228, 129);
 }
-.header-contain .title h1{
+
+.header-contain .title h1 {
     text-transform: capitalize;
     font-family: 'Kanit', sans-serif;
     font-size: 55px;
@@ -51,53 +57,64 @@ h2{
     font-weight: 800;
     color: rgb(63, 108, 166);
 }
-.header-contain .title p{
+
+.header-contain .title p {
     font-size: 16px;
     color: rgb(7, 6, 6);
     font-style: italic;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 50px;
 }
-.header-contain .title a{
+
+.header-contain .title a {
     padding: 17px 20px;
     background-color: rgb(56, 87, 141);
     border-radius: 50px;
     color: white;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     transition: all 1s;
 }
-.header-contain .title a:hover{
+
+.header-contain .title a:hover {
     background-color: rgb(52, 145, 78);
     transition: all 1s;
 }
 
 /*Sección de descripción*/
 
-#section-description, #section-respuestas{
+#section-description,
+#section-respuestas {
     width: 80%;
     height: 500px;
     margin: 200px 10%;
     display: flex;
 }
-#section-description p{
+
+#section-description p {
     font-size: 18px;
     color: rgb(7, 6, 6);
     font-family: 'Roboto', sans-serif;
     padding: 20px;
 }
-#section-description .illustration, #section-description .descript, .respuestas{
+
+#section-description .illustration,
+#section-description .descript,
+.respuestas {
     width: 50%;
     height: 100%;
 }
-#section-description .illustration img{
+
+#section-description .illustration img {
     width: 90%;
 }
-#section-description .descript{
+
+#section-description .descript {
     padding-top: 180px;
 }
-#section-respuestas .respuestas .ind{
+
+#section-respuestas .respuestas .ind {
     width: 80%;
     margin: 20px 0px;
     height: 60px;
@@ -105,7 +122,8 @@ h2{
     border-radius: 50px;
     transition: all 1s;
 }
-#section-respuestas .respuestas .ind a{
+
+#section-respuestas .respuestas .ind a {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 60px;
@@ -114,24 +132,62 @@ h2{
     color: rgb(49, 70, 133);
     padding-left: 25px;
 }
-#section-respuestas .respuestas .ind:hover{
+
+#section-respuestas .respuestas .ind:hover {
     box-shadow: 0px 0px 10px rgba(24, 139, 135, 0.97);
     transition: all 1s;
 }
 
-#section-respuestas h2{
+#section-respuestas h2 {
     padding-bottom: 30px;
 }
 
 .btn-outline-info {
-   margin-left: 10px;
+    margin-left: 10px;
 }
 
-@media(max-width: 1300px){
-header  .illus{
-   width: 50%;
-    height: 40%;
-    margin-top: 0px;
+@media(max-width: 1600px) {
+    header .illus {
+        width: 50%;
+        height: 40%;
+        margin-top: 0px;
+    }
+
 }
 
+@media(max-width:1300px) {
+    .illustration img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .respuestas {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(max-width:950px) {
+    .header-contain .title h1{
+        font-size: 20px;
+    }
+    #section-description {
+        display: inline-block;
+        text-align: -webkit-center;
+    }
+
+    #section-description .descript{
+        padding-top: 10px;
+    }
+
+    .illustration img {
+        text-align: center;
+        width: 450px;
+    }
+
+
+    #section-respuestas {
+        display: inline-block;
+        text-align: -webkit-center;
+    }
 }
